@@ -6,7 +6,7 @@ The **Movie Recommendation System** is a content-based filtering application tha
 ## Features
 - Search for a movie from a dropdown menu.
 - Get five recommended movies based on similarity.
-- Display posters of recommended movies fetched from **The Movie Database (TMDb) API**.
+- Display posters of recommended movies.
 - Interactive UI using **Streamlit**.
 
 ## Technologies Used
@@ -15,7 +15,7 @@ The **Movie Recommendation System** is a content-based filtering application tha
 - **Scikit-learn** (for similarity calculation)
 - **Pandas & NumPy** (for data handling)
 - **Pickle** (for model storage)
-- **Requests** (for fetching movie posters via TMDb API)
+- **Requests** (for fetching movie posters)
 
 ## Installation
 
@@ -52,11 +52,7 @@ movie-recommender-system/
 │── README.md               # Project documentation
 ```
 
-## API Key Configuration
-This project uses **TMDb API** to fetch movie posters. Replace the API key in `fetch_poster` function inside `app.py` if required:
-```python
-url = "https://api.themoviedb.org/3/movie/{}?api_key=YOUR_API_KEY&language=en-US".format(movie_id)
-```
+
 
 ## Dependencies
 The required Python libraries are listed in `requirements.txt`:
@@ -79,7 +75,6 @@ pickle-mixin
 This project is open-source and available under the **MIT License**.
 
 ## Acknowledgments
-- **TMDb API** for providing movie data.
 - **Scikit-learn** for similarity computation.
 - **Streamlit** for creating an interactive UI.
 
